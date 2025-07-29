@@ -72,7 +72,7 @@ with col1:
     st.write(data_customer.transpose())
 
 # Load model
-with open('model/final_tuned_lightgbm_ros_selectkbest.pkl', 'rb') as f:
+with open('final_tuned_lightgbm_ros_selectkbest.pkl', 'rb') as f:
     model_loaded = pickle.load(f)
 
 # Predict to data
