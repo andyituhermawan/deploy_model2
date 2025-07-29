@@ -6,3 +6,4 @@ category_encoders
 xgboost
 imblearn
 lightgbm
+pandas
