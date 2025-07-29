@@ -24,16 +24,18 @@ def create_user_input():
     CashbackAmount = st.sidebar.slider('Cashback Amount', min_value=0.0, max_value=324.99, value=50.0)
 
     # Categorical Features
+    # Categorical Features
     PreferredLoginDevice = st.sidebar.selectbox('Preferred Login Device', ['Mobile Phone', 'Computer'])
-    CityTier = st.sidebar.selectbox('City Tier', [1, 2, 3])
+    CityTier = st.sidebar.selectbox('City Tier', ['1', '2', '3'])
     PreferredPaymentMode = st.sidebar.selectbox('Preferred Payment Mode', ['Debit Card', 'Credit Card', 'E wallet', 'Cash on Delivery', 'UPI'])
     Gender = st.sidebar.selectbox('Gender', ['Female', 'Male'])
     PreferedOrderCat = st.sidebar.selectbox('Preferred Order Category', ['Mobile Phone', 'Laptop & Accessory', 'Grocery', 'Fashion', 'Others'])
-    SatisfactionScore = st.sidebar.selectbox('Satisfaction Score', [1, 2, 3, 4, 5])
+    SatisfactionScore = st.sidebar.selectbox('Satisfaction Score', ['1', '2', '3', '4', '5'])
     MaritalStatus = st.sidebar.selectbox('Marital Status', ['Single', 'Married', 'Divorced'])
     Complain = st.sidebar.radio('Customer Complaint?', [0, 1])  # 0 = no complain, 1 = complain
     CountOfAddress = st.sidebar.selectbox('Count of Address', ['1–2', '3', '4–6', '7+'])
 
+    
     # Creating a dictionary with user input
     user_data = {
         'Tenure': Tenure,
