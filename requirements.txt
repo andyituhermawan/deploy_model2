@@ -6,4 +6,4 @@ joblib
 lightgbm
 xgboost
 category_encoders
-imblearn
+imbalanced-learn
