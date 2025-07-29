@@ -30,7 +30,8 @@ def create_user_input():
     SatisfactionScore = st.sidebar.selectbox('Satisfaction Score', ['1', '2', '3', '4', '5'])
     MaritalStatus = st.sidebar.selectbox('Marital Status', ['Single', 'Married', 'Divorced'])
     Complain = st.sidebar.radio('Customer Complaint?', [0, 1])
-    CountOfAddress = st.sidebar.selectbox('Count of Address', ['1–2', '3', '4–6', '7+'])
+    NumberOfAddress = st.sidebar.selectbox('Number of Address', ['1–2', '3', '4–6', '7+'])
+
 
     user_data = {
         'Tenure': Tenure,
