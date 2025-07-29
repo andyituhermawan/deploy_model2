@@ -51,7 +51,7 @@ def create_user_input():
         'SatisfactionScore': SatisfactionScore,
         'MaritalStatus': MaritalStatus,
         'Complain': Complain,
-        'CountOfAddress': CountOfAddress
+        'NumberOfAddress': NumberOfAddress
     }
 
     return pd.DataFrame([user_data])
